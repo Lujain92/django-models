@@ -6,5 +6,6 @@
 
 {% for snack in object_list %}
     <li>Name: {{ snack.name }}, Purchaser : {{ snack.purchaser }} Description: {{ snack.description }}</li>
+    <button><a href="{% url 'detail' snack.id%}">details</a></button>
 {% endfor %}
 {% endblock content %}
